@@ -1,0 +1,33 @@
+{
+    "name": "frengky/laravel-auditable",
+    "description": "Laravel Eloquent Model Auditing",
+    "keywords": ["laravel", "eloquent", "model", "audit"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/frengky/laravel-auditable",
+    "authors": [
+        {
+            "name": "Frengky",
+            "email": "frengky.lim@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0"
+    },
+    "require-dev": {
+        "illuminate/support": "^7|^8",
+        "illuminate/database": "^7|^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Frengky\\Auditable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Frengky\\Auditable\\ServiceProvider"
+            ]
+        }
+    }
+}
